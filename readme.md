@@ -1,4 +1,4 @@
-# Project 2: Expense Management System(EMS)
+# Project 2: Expense Management Application(EMA)
 
 ## Description
 Employee Management application is developed to maintain the details of employees working in any organization. It maintains the information about the personal and official details of the employees.This project aims to simplify the task of maintaining records of the employees of Company.
