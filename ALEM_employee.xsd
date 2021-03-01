@@ -1,0 +1,61 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:com:appian:types" targetNamespace="urn:com:appian:types">
+  <xsd:complexType name="ALEM_employee">
+    <xsd:sequence>
+      <xsd:element name="empId" nillable="true" type="xsd:int">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Id @GeneratedValue</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="firstName" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="fname", length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="middleName" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="mname", length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="lastName" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="lname", length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="age" nillable="true" type="xsd:int" />
+      <xsd:element name="gender" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="salary" nillable="true" type="xsd:double" />
+      <xsd:element name="createdBy" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="status" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="status", length=255)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="comments" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="comments", length=1000)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="createdOn" nillable="true" type="xsd:date" />
+      <xsd:element name="updatedBy" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="updatedOn" nillable="true" type="xsd:date" />
+      <xsd:element name="isActive" nillable="true" type="xsd:boolean" />
+      <xsd:element name="email" nillable="true" type="xsd:string">
+        <xsd:annotation>
+          <xsd:appinfo source="appian.jpa">@Column(name="email", length=40)</xsd:appinfo>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
