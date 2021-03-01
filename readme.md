@@ -12,5 +12,5 @@ Employee Management application is developed to maintain the details of employee
 
 ## Features
 ### List of Features
-- Employees can login, logout, submit reimbursement requests, view pending and resolved requests.
-- Supervisors, Department Heads and Benefits Coordinators can login and logout but can also view all pending requests of employees that are under them and approve or deny requests accordingly. They can also view a report of requests they have access to.
+- Employees can login, logout, add new Employee Records and update old records.
+- HR Managers can login and logout but can also view and approve or reject new employee records.
